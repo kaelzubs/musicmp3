@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<!-- This is the content section -->
+<div class="testimonial">
+    <div class="small-container">
+        <h2 class="title">Top Mp3 Music Download</h2>
+        <div class="row">
+            {% for title in objs %}
+            <a href="{% url 'download' %}" class="col-4">
+                <h3>{{ title }}</h3>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- content section ends -->
